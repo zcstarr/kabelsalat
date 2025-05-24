@@ -10,6 +10,7 @@ import {
   highlightActiveLine,
   keymap,
 } from "@codemirror/view";
+import { vim } from "@replit/codemirror-vim"
 import { bracketMatching } from "@codemirror/language";
 import { Prec } from "@codemirror/state";
 
@@ -17,6 +18,7 @@ export function initEditor({ root, code, onChange, onEvaluate, onStop }) {
   let editor = new EditorView({
     extensions: [
       //basicSetup,
+      vim(),
       lineNumbers(),
       [highlightActiveLine(), highlightActiveLineGutter()],
       bracketMatching({ brackets: "()[]{}<>" }),

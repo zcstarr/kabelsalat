@@ -9,13 +9,14 @@
   "author": "Felix Roos <flix91@gmail.com>",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
+    "@codemirror/commands": "^6.0.1",
     "@codemirror/lang-javascript": "^6.2.2",
     "@codemirror/language": "^6.0.1",
-    "@codemirror/commands": "^6.0.1",
     "@codemirror/state": "^6.4.1",
     "@codemirror/view": "^6.28.4",
-    "codemirror": "^6.0.1",
+    "@kabelsalat/transpiler": "workspace:*",
     "@lezer/highlight": "^1.2.0",
-    "@kabelsalat/transpiler": "workspace:*"
+    "@replit/codemirror-vim": "^6.3.0",
+    "codemirror": "^6.0.1"
   }
 }
